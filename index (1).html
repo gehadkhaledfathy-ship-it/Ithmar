@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فوائد مسار إثمار</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f6;--sf:#fff;--ink:#12292e;--mut:#5f7479;--ln:#dbe4e6;--hd:#0d3a43;--hd2:#14535f;--ac:#0f766e;--ac-s:#dff3f0;--gold:#e5a237;--on:#fff;--sh:0 1px 2px rgba(13,58,67,.06),0 6px 18px rgba(13,58,67,.07)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1618;--sf:#13252a;--ink:#e6f0f1;--mut:#92abb0;--ln:#233a40;--hd:#0a2a31;--hd2:#0f3d46;--ac:#4fd1c0;--ac-s:#17383a;--gold:#f0b54e;--on:#06201d;--sh:none}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;font-size:16px;line-height:1.7}
+button,input,textarea{font-family:inherit}
+.top{background:linear-gradient(135deg,var(--hd),var(--hd2));color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{display:flex;align-items:center;gap:12px;padding:14px 0}
+.logo{width:40px;height:40px;border-radius:12px;background:var(--gold);color:#3b2a05;display:grid;place-items:center;font-family:Amiri,serif;font-size:1.7rem;font-weight:700}
+.brand b{display:block;line-height:1.2}.brand span{font-size:.8rem;opacity:.75}
+.hero{padding:26px 0 70px}
+.hero h1{font-family:Amiri,serif;font-size:2.4rem;line-height:1.3;margin:0 0 6px}
+.hero p{margin:0;opacity:.8}
+.stats{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.12);border-radius:14px;padding:10px 18px;min-width:120px}
+.stat b{font-size:1.6rem;display:block;line-height:1.2}.stat span{font-size:.8rem;opacity:.8}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:22px;margin-top:-48px;padding-bottom:60px;align-items:start}
+.side,.card,.note{background:var(--sf);border:1px solid var(--ln);border-radius:18px;box-shadow:var(--sh)}
+.side{padding:14px;position:sticky;top:12px}
+.side h2{font-size:.95rem;margin:4px 8px 10px;color:var(--mut)}
+.chs{display:flex;flex-direction:column;gap:4px}
+.ch{display:flex;align-items:center;gap:10px;width:100%;border:0;background:transparent;color:var(--ink);padding:9px 10px;border-radius:12px;cursor:pointer;font-size:.95rem;text-align:start}
+.ch:hover{background:var(--bg)}
+.ch .n{width:30px;height:30px;border-radius:9px;background:var(--bg);display:grid;place-items:center;font-weight:600;font-size:.85rem;flex:none}
+.ch .c{margin-inline-start:auto;font-size:.8rem;color:var(--mut)}
+.ch[aria-pressed="true"]{background:var(--ac-s);font-weight:600}
+.ch[aria-pressed="true"] .n{background:var(--ac);color:var(--on)}
+.main{display:flex;flex-direction:column;gap:18px;min-width:0}
+.card{padding:20px}.card h2{margin:0 0 14px;font-size:1.15rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+label{display:block;font-size:.82rem;font-weight:500;color:var(--mut);margin-bottom:4px}
+input,textarea{width:100%;border:1.5px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:1rem}
+textarea{min-height:120px;resize:vertical;font-family:Amiri,serif;font-size:1.25rem;line-height:1.9;margin-bottom:14px}
+input:focus,textarea:focus{border-color:var(--ac);outline:0;box-shadow:0 0 0 3px var(--ac-s)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{border:0;border-radius:12px;padding:10px 22px;font-size:.95rem;font-weight:600;cursor:pointer;background:var(--ac);color:var(--on)}
+.btn:disabled{opacity:.6;cursor:wait}
+.head{display:flex;align-items:baseline;gap:10px}
+.head h2{font-family:Amiri,serif;font-size:1.7rem;margin:0}.head span{color:var(--mut);font-size:.9rem}
+.list{display:flex;flex-direction:column;gap:14px}
+.note{padding:18px 20px;border-radius:16px}
+.note p.b{margin:0 0 12px;font-family:Amiri,serif;font-size:1.3rem;line-height:2;white-space:pre-wrap}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.tag{font-size:.78rem;background:var(--ac-s);color:var(--ac);padding:2px 12px;border-radius:99px;font-weight:600}
+.foot{display:flex;gap:10px;align-items:center;border-top:1px solid var(--ln);padding-top:10px;font-size:.82rem;color:var(--mut);flex-wrap:wrap}
+.foot .sp{flex:1}
+.tg{border:1.5px solid var(--ln);background:transparent;color:var(--ac);border-radius:10px;padding:4px 14px;cursor:pointer;font-size:.85rem;font-weight:600}
+.coms{margin-top:12px;background:var(--bg);border-radius:14px;padding:12px}
+.cm{padding:8px 4px;border-bottom:1px solid var(--ln)}
+.cm:last-of-type{border-bottom:0}
+.cm b{font-size:.85rem}.cm small{color:var(--mut);margin-inline-start:8px}
+.cm p{margin:2px 0 0;white-space:pre-wrap}
+.cf{display:grid;grid-template-columns:150px 1fr auto;gap:8px;margin-top:10px}
+.cf input{padding:8px 12px;font-size:.92rem}
+.msg{text-align:center;padding:36px 20px;color:var(--mut);border:2px dashed var(--ln);border-radius:16px}
+.msg b{display:block;color:var(--ink);margin-bottom:4px}
+.err{background:#fde8e4;color:#8a2a1b;border-radius:12px;padding:10px 14px;font-size:.9rem;display:none}
+@media (max-width:820px){
+ .layout{grid-template-columns:1fr;gap:16px}
+ .side{position:static;padding:10px}.side h2{display:none}
+ .chs{flex-direction:row;overflow-x:auto;gap:6px}
+ .ch{width:auto;flex:none;padding:7px 12px}.ch .c{display:none}
+ .hero h1{font-size:1.9rem}.grid2,.cf{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <div class="nav"><div class="logo">إ</div><div class="brand"><b>أكاديمية الجيل الصاعد</b><span>مسار إثمار</span></div></div>
+ <div class="hero"><h1>دفتر الفوائد المشترك</h1><p>أضف فائدة أو علّق على فوائد غيرك، والكل يرى الكل.</p>
+  <div class="stats"><div class="stat"><b id="sT">٠</b><span>فائدة</span></div><div class="stat"><b id="sM">٠</b><span>تعليق</span></div><div class="stat"><b id="sC">٠</b><span>فصول بها فوائد</span></div></div>
+ </div>
+</div></header>
+<div class="wrap layout">
+ <aside class="side"><h2>الفصول</h2><div class="chs" id="chs"></div></aside>
+ <main class="main">
+  <div class="err" id="err"></div>
+  <section class="card" id="setup" hidden>
+   <h2>خطوة واحدة قبل التشغيل</h2>
+   <ol style="padding-inline-start:20px;margin:0 0 12px">
+    <li>أنشئ مشروعًا مجانيًا في <b>supabase.com</b>.</li>
+    <li>افتح <b>SQL Editor</b>، والصق الكود التالي، واضغط Run.</li>
+    <li>من <b>Project Settings ← API</b> انسخ Project URL وanon key، وضعهما في أعلى السكربت في هذا الملف مكان PASTE، ثم ارفعه على GitHub.</li>
+   </ol>
+   <pre id="sqlbox" dir="ltr" style="background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:12px;overflow:auto;font-size:.8rem;max-height:220px;margin:0 0 12px">create table fawaid (
+  id bigint generated always as identity primary key,
+  ch int not null check (ch between 2 and 12),
+  body text not null check (char_length(body) <= 2000),
+  lecture text, speaker text, author text,
+  created_at timestamptz default now()
+);
+create table comments (
+  id bigint generated always as identity primary key,
+  fawaida_id bigint not null references fawaid(id) on delete cascade,
+  body text not null check (char_length(body) <= 600),
+  author text,
+  created_at timestamptz default now()
+);
+create table admin (h text);
+alter table fawaid enable row level security;
+alter table comments enable row level security;
+alter table admin enable row level security;
+create policy "r1" on fawaid for select using (true);
+create policy "w1" on fawaid for insert with check (true);
+create policy "r2" on comments for select using (true);
+create policy "w2" on comments for insert with check (true);
+
+create function set_admin(code text) returns boolean
+language plpgsql security definer set search_path = public as $$
+begin
+  if exists (select 1 from admin) or length(code) < 4 then return false; end if;
+  insert into admin(h) values (encode(sha256(convert_to(code,'utf8')),'hex'));
+  return true;
+end $$;
+
+create function delete_item(kind text, item_id bigint, code text) returns text
+language plpgsql security definer set search_path = public as $$
+declare cur text;
+begin
+  select h into cur from admin limit 1;
+  if cur is null then return 'noadmin'; end if;
+  if cur <> encode(sha256(convert_to(code,'utf8')),'hex') then return 'denied'; end if;
+  if kind = 'f' then delete from fawaid where id = item_id;
+  else delete from comments where id = item_id; end if;
+  return 'ok';
+end $$;
+grant execute on function set_admin(text) to anon;
+grant execute on function delete_item(text,bigint,text) to anon;</pre>
+   <button class="btn" id="cpsql">نسخ كود SQL</button>
+  </section>
+  <section class="card">
+   <h2>إضافة فائدة إلى <span id="fch"></span></h2>
+   <div class="grid2">
+    <div><label for="au">اسمك (اختياري)</label><input id="au" maxlength="40" placeholder="اتركه فارغًا لتظهر «مجهول»"></div>
+    <div><label for="lec">المحاضرة أو الدرس</label><input id="lec" maxlength="80" placeholder="اختياري"></div>
+   </div>
+   <div class="grid2"><div><label for="spk">المحاضر</label><input id="spk" maxlength="60" placeholder="اختياري"></div></div>
+   <label for="txt">الفائدة</label>
+   <textarea id="txt" maxlength="2000" placeholder="اكتب الفائدة هنا..."></textarea>
+   <button class="btn" id="save">نشر الفائدة</button>
+  </section>
+  <div class="head"><h2 id="lt"></h2><span id="lc"></span></div>
+  <div class="list" id="list"></div>
+ </main>
+</div>
+<script>
+/* ===== ضع بيانات مشروعك من Supabase هنا ===== */
+const SUPABASE_URL="PASTE_PROJECT_URL";
+const SUPABASE_KEY="PASTE_ANON_KEY";
+/* ============================================ */
+const HD={apikey:SUPABASE_KEY,"Content-Type":"application/json"};
+if(!SUPABASE_KEY.startsWith("sb_"))HD.Authorization="Bearer "+SUPABASE_KEY;
+async function rest(path,opt){const r=await fetch(SUPABASE_URL+"/rest/v1/"+path,Object.assign({headers:HD},opt));if(!r.ok)throw new Error("http "+r.status);return r.status===204?null:r.json().catch(()=>null)}
+async function api(path,opt){
+ if(path==="state"){const[n,c]=await Promise.all([rest("fawaid?select=*&order=created_at.desc&limit=1000"),rest("comments?select=*&order=created_at.asc&limit=3000")]);return{notes:n,coms:c}}
+ if(path==="fawaid"||path==="comments")return rest(path,Object.assign({},opt,{headers:Object.assign({Prefer:"return=minimal"},HD)}));
+ return rest("rpc/"+path,opt)
+}
+const $=i=>document.getElementById(i);
+const ar=n=>Number(n).toLocaleString("ar-EG");
+const fd=t=>new Date(t).toLocaleDateString("ar-EG",{day:"numeric",month:"long"});
+let notes=[],coms=[],cur=2,open=new Set(),admin=false,code="";
+function delBtn(kind,id,txt){const x=el("button","tg",txt);x.style.color="#b4412f";x.onclick=async()=>{
+ if(!confirm("تأكيد الحذف؟"))return;
+ const call=()=>api("delete_item",{method:"POST",body:JSON.stringify({kind,item_id:id,code})});
+ try{
+  if(!code){code=prompt("اكتب كلمة سر المشرف:")||"";if(!code)return}
+  let r=await call();
+  if(r==="noadmin"){const k=prompt("لم تُحدَّد كلمة سر بعد. اكتب كلمة سر جديدة (٤ أحرف أو أكثر) لتكون لك وحدك:");if(!k){code="";return}
+   const ok=await api("set_admin",{method:"POST",body:JSON.stringify({code:k})});if(ok!==true)throw 0;code=k;r=await call()}
+  if(r!=="ok")throw 0;
+  await load()
+ }catch(e){code="";alert("تعذّر الحذف: كلمة السر غير صحيحة.")}
+};return x}
+let me="";try{me=localStorage.getItem("ithmar-name")||""}catch(e){}
+$("au").value=me;
+function showErr(m){const e=$("err");e.textContent=m;e.style.display=m?"block":"none"}
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function render(){
+  $("sT").textContent=ar(notes.length);$("sM").textContent=ar(coms.length);
+  $("sC").textContent=ar(new Set(notes.map(n=>n.ch)).size);
+  $("fch").textContent="الفصل "+ar(cur);
+  const C=$("chs");C.innerHTML="";
+  for(let i=2;i<=12;i++){
+    const b=el("button","ch");b.setAttribute("aria-pressed",String(i===cur));
+    b.append(el("span","n",ar(i)),el("span","","الفصل "+ar(i)),el("span","c",ar(notes.filter(n=>n.ch===i).length)));
+    b.onclick=()=>{cur=i;render()};C.appendChild(b);
+  }
+  const items=notes.filter(n=>n.ch===cur);
+  $("lt").textContent="فوائد الفصل "+ar(cur);$("lc").textContent=ar(items.length)+" فائدة";
+  const L=$("list");L.innerHTML="";
+  if(!items.length){const m=el("div","msg");m.append(el("b","","لا فوائد في هذا الفصل بعد"),"كن أول من يضيف فائدة.");L.appendChild(m);return}
+  items.forEach(n=>{
+    const d=el("article","note");
+    if(n.lecture||n.speaker){const t=el("div","tags");if(n.lecture)t.appendChild(el("span","tag",n.lecture));if(n.speaker)t.appendChild(el("span","tag","المحاضر: "+n.speaker));d.appendChild(t)}
+    d.appendChild(el("p","b",n.body));
+    const cs=coms.filter(c=>c.fawaida_id===n.id);
+    const f=el("div","foot");
+    const tg=el("button","tg","التعليقات ("+ar(cs.length)+")");
+    tg.onclick=()=>{open.has(n.id)?open.delete(n.id):open.add(n.id);render()};
+    f.append(tg,el("span","sp"),el("span","",(n.author||"مجهول")+" • "+fd(n.created_at)));f.appendChild(delBtn("f",n.id,"حذف الفائدة"));
+    d.appendChild(f);
+    if(open.has(n.id)){
+      const b=el("div","coms");
+      cs.forEach(c=>{const r=el("div","cm");const h=el("div");h.append(el("b","",c.author||"مجهول"),el("small","",fd(c.created_at)));h.appendChild(delBtn("c",c.id,"حذف"));r.append(h,el("p","",c.body));b.appendChild(r)});
+      if(!cs.length)b.appendChild(el("div","cm","لا تعليقات بعد."));
+      const cf=el("div","cf");
+      const a=el("input");a.placeholder="اسمك (اختياري)";a.maxLength=40;a.value=$("au").value;
+      const t=el("input");t.placeholder="اكتب تعليقًا...";t.maxLength=600;
+      const s=el("button","btn","إرسال");
+      s.onclick=async()=>{
+        const body=t.value.trim();if(!body){t.focus();return}
+        s.disabled=true;rememberName(a.value);
+        try{await api("comments",{method:"POST",body:JSON.stringify({fawaida_id:n.id,body,author:a.value.trim()||null})});await load()}
+        catch(e){showErr("تعذّر إرسال التعليق، حاول مرة أخرى.")}
+        s.disabled=false;
+      };
+      t.onkeydown=e=>{if(e.key==="Enter")s.click()};
+      cf.append(a,t,s);b.appendChild(cf);d.appendChild(b);
+    }
+    L.appendChild(d);
+  });
+}
+function rememberName(v){v=v.trim();$("au").value=v;try{localStorage.setItem("ithmar-name",v)}catch(e){}}
+async function load(silent){
+  try{
+    const d=await api("state");notes=d.notes;coms=d.coms;showErr("");render();
+  }catch(e){if(!silent)showErr("تعذّر الاتصال بقاعدة البيانات. تأكد من إعدادات Supabase في الملف.")}
+}
+$("save").onclick=async()=>{
+  const body=$("txt").value.trim();if(!body){$("txt").focus();return}
+  const btn=$("save");btn.disabled=true;rememberName($("au").value);
+  try{
+    await api("fawaid",{method:"POST",body:JSON.stringify({ch:cur,body,lecture:$("lec").value.trim()||null,speaker:$("spk").value.trim()||null,author:$("au").value.trim()||null})});
+    $("txt").value="";await load();
+  }catch(e){showErr("تعذّر نشر الفائدة، حاول مرة أخرى.")}
+  btn.disabled=false;
+};
+$("cpsql").onclick=async()=>{try{await navigator.clipboard.writeText($("sqlbox").textContent);$("cpsql").textContent="تم النسخ"}catch(e){}};
+if(SUPABASE_URL.startsWith("PASTE")){$("setup").hidden=false;showErr("لم تُضبط قاعدة البيانات بعد، اتبع الخطوات في البطاقة أدناه.");render()}else load();setInterval(()=>{const a=document.activeElement;if(!(a&&a.closest&&a.closest("#list")&&a.tagName==="INPUT"&&a.value))load(true)},15000);
+</script>
+</body>
+</html>
